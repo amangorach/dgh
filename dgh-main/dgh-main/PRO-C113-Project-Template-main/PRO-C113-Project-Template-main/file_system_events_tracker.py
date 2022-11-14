@@ -25,7 +25,7 @@ class FileEventHandler(FileSystemEventHandler):
         def on_created (self, event): 
             print (f"Hey, {event.src_path} has been created!")
         def on_deleted (self, event): 
-            print("Oops! Someone deleted {event.src_path}!")
+            print(f"Oops! Someone deleted {event.src_path}!")
         def on_modified (self, event): 
             print (f"Hey there!, {event.src_path} has been modified")
         def on_moved (self, event):
